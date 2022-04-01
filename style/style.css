@@ -12,9 +12,8 @@ p {
   max-width: 30%;
   right: 43%;
   top: 7%;
-  color: greenyellow;
-  background-color: blue;
-  font-size: 60px;
+  color: blue;
+  font-size: 100px;
 }
 
 .logo1 {
@@ -33,4 +32,44 @@ p {
   max-height: 40%;
   right: 0%;
   top: 0%;
+}
+
+.playtennis1 {
+  display: flex;
+  position: absolute;
+  max-width: 35%;
+  max-height: 50%;
+  top: 40%;
+}
+
+.playtennis2 {
+  display: flex;
+  position: absolute;
+  max-width: 35%;
+  max-height: 50%;
+  top: 40%;
+}
+
+@keyframes imgFadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img.playtennis2 {
+  opacity: 0;
+  animation-name: imgFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
 }
