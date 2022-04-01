@@ -17,8 +17,8 @@ body {
 .logo2 {
   display: flex;
   position: absolute;
-  max-width: 25%;
-  max-height: 50%;
+  max-width: 20%;
+  max-height: 40%;
   right: 0%;
   top: 0%;
 }
