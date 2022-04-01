@@ -5,6 +5,17 @@
 body {
   overflow-x: hidden;
 }
+
+p {
+  display: flex;
+  position: absolute;
+  max-width: 30%;
+  right: 43%;
+  top: 7%;
+  color: greenyellow;
+  font-size: 60px;
+}
+
 .logo1 {
   display: flex;
   position: absolute;
