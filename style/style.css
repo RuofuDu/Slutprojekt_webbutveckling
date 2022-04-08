@@ -75,6 +75,10 @@ img.playtennis2 {
 }
 
 nav {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 30%;
   font-size: 14px;
   font-family: georgia;
   text-align: center;
