@@ -73,3 +73,15 @@ img.playtennis2 {
   animation-duration: 6s;
   animation-direction: alternate;
 }
+
+nav {
+  font-size: 14px;
+  font-family: georgia;
+  text-align: center;
+}
+div {
+  width: 119px;
+  border: solid 1px;
+  float: left;
+  padding: 10px 0;
+}
