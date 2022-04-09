@@ -4,6 +4,7 @@
 }
 body {
   overflow-x: hidden;
+  background-color: darkmagenta;
 }
 
 p {
@@ -12,7 +13,7 @@ p {
   max-width: 30%;
   right: 43%;
   top: 7%;
-  color: blue;
+  color: whitesmoke;
   font-size: 100px;
 }
 
@@ -29,7 +30,7 @@ p {
   display: flex;
   position: absolute;
   max-width: 20%;
-  max-height: 40%;
+  max-height: 35%;
   right: 0%;
   top: 0%;
 }
@@ -39,7 +40,7 @@ p {
   position: absolute;
   max-width: 35%;
   max-height: 50%;
-  top: 40%;
+  top: 60%;
 }
 
 .playtennis2 {
@@ -47,45 +48,34 @@ p {
   position: absolute;
   max-width: 35%;
   max-height: 50%;
-  top: 40%;
-}
-
-@keyframes imgFadeInOut {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-img.playtennis2 {
-  opacity: 0;
-  animation-name: imgFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-direction: alternate;
+  top: 60%;
+  left: 53%;
 }
 
 nav {
   display: flex;
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 37.5%;
   font-size: 14px;
   font-family: georgia;
   text-align: center;
+  background-color: red;
+  border: 1px solid white;
 }
+
 div {
   width: 119px;
-  border: solid 1px;
   float: left;
   padding: 10px 0;
+  color: aliceblue;
+  font-size: small;
+}
+
+.background {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 54%;
+  top: 0;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <title>Document</title>
+    <title>Tennisklubb</title>
   </head>
   <body>
     <script src="app.js"></script>
@@ -18,11 +18,22 @@
       <img class="playtennis1" src="images/spelatennis2.jpg" />
       <img class="playtennis2" src="images/spelatennis3.jpg" />
     </div>
-    <nav>
-      <a href="#"><div>boka bana</div></a>
-      <a href="#"><div>vara med i träning</div></a>
-      <a href="#"><div>köpa kläder</div></a>
-      <a href="#"><div>kontakt oss</div></a>
-    </nav>
+    <div class="container-out">
+      <div class="container-in">
+        <div class="search-container">
+          <div class="search-engine">
+            <p class="search-title"></p>
+            <input
+              type="input"
+              id="search-input"
+              autocomplete="off"
+              placeholder=""
+            />
+          </div>
+          <div id="search-results"></div>
+          <div id="search-data"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
