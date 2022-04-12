@@ -2,38 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Grape Nuts"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/tennis.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style/style.css" />
     <title>Tennisklubb</title>
   </head>
   <body>
     <script src="app.js"></script>
-    <p>Tennisklubb</p>
-    <div>
-      <img class="logo1" src="images/tennislogo.jpg" />
-      <img class="logo2" src="images/tennislogo2.jpg" />
-    </div>
-    <div>
-      <img class="playtennis1" src="images/spelatennis2.jpg" />
-      <img class="playtennis2" src="images/spelatennis3.jpg" />
-    </div>
-    <div class="container-out">
-      <div class="container-in">
-        <div class="search-container">
-          <div class="search-engine">
-            <p class="search-title"></p>
-            <input
-              type="input"
-              id="search-input"
-              autocomplete="off"
-              placeholder=""
-            />
+    <header>
+      <p>Tennisklubb</p>
+      <div>
+        <img class="logo1" src="images/tennislogo.jpg" />
+        <img class="logo2" src="images/tennislogo2.jpg" />
+      </div>
+    </header>
+    <main>
+      <img class="tennis1" src="images/spelatennis1.jpg" alt="boka bana" />
+      <img
+        class="tennis2"
+        src="images/spelatennis3.jpg"
+        alt="vara med träning"
+      />
+      <img class="tennis3" src="images/spelatennis2.jpg" alt="match" />
+      <img class="tennis4" src="images/tennisshop.jpg" alt="tennisshop" />
+
+      <a class="book" style="text-decoration: none" href="bokning.html"
+        >Boka bana</a
+      >
+      <a class="training" style="text-decoration: none" href="index.html"
+        >Vara med träning</a
+      >
+      <a class="match" style="text-decoration: none" href="index.html"
+        >Tävlingen</a
+      >
+      <a class="shop" style="text-decoration: none" href="index.html"
+        >Köpa tennisutrustning</a
+      >
+      <div class="container-out">
+        <div class="container-in">
+          <div class="search-container">
+            <div class="search-engine">
+              <p class="search-title"></p>
+              <input
+                type="input"
+                id="search-input"
+                autocomplete="off"
+                placeholder="sök"
+              />
+            </div>
+            <div id="search-results"></div>
+            <div id="search-data"></div>
           </div>
-          <div id="search-results"></div>
-          <div id="search-data"></div>
         </div>
       </div>
-    </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
