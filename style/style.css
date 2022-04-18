@@ -45,22 +45,13 @@ p {
   top: 50%;
 }
 
-.tennis1:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
 .book {
   display: flex;
   position: absolute;
   top: 100%;
   left: 20%;
   font-size: 30px;
-}
-
-.book:hover {
-  color: coral;
+  color: red;
 }
 
 .tennis2 {
@@ -72,21 +63,13 @@ p {
   left: 53%;
 }
 
-.tennis2:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
 .training {
   display: flex;
   position: absolute;
   top: 100%;
   left: 60%;
   font-size: 30px;
-}
-.training:hover {
-  color: coral;
+  color: red;
 }
 
 .tennis3 {
@@ -98,22 +81,13 @@ p {
   left: 10%;
 }
 
-.tennis3:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
 .match {
   display: flex;
   position: absolute;
   top: 170%;
   left: 20%;
   font-size: 30px;
-}
-
-.match:hover {
-  color: coral;
+  color: red;
 }
 
 .tennis4 {
@@ -124,10 +98,14 @@ p {
   left: 53%;
 }
 
+.tennis1:hover,
+.tennis2:hover,
+.tennis3:hover,
 .tennis4:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
+  transition-duration: 1s;
 }
 
 .shop {
@@ -136,36 +114,70 @@ p {
   top: 170%;
   left: 60%;
   font-size: 30px;
+  color: red;
 }
 
+.book:hover,
+.training:hover,
+.match:hover,
 .shop:hover {
-  color: coral;
+  color: blue;
 }
 
-nav {
+.twitter {
   display: flex;
   position: absolute;
-  left: 0;
-  top: 37.5%;
-  font-size: 14px;
-  font-family: georgia;
-  text-align: center;
-  background-color: red;
-  border: 1px solid white;
+  top: 200%;
+  right: 10%;
+  max-width: 10%;
+  max-height: 10%;
 }
 
-div {
-  width: 119px;
-  float: left;
-  padding: 10px 0;
-  color: aliceblue;
-  font-size: small;
+.ins {
+  display: flex;
+  position: absolute;
+  top: 200%;
+  right: 20%;
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.facebook {
+  display: flex;
+  position: absolute;
+  top: 200%;
+  right: 2%;
+  max-width: 10%;
+  max-height: 10%;
 }
 
 .background {
   display: flex;
   position: absolute;
   width: 100%;
-  height: 54%;
+  max-height: 60%;
+}
+
+.back {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   top: 0;
+  left: 0;
+  background-color: yellow;
+}
+
+.back:hover {
+  color: yellow;
+  background-color: blue;
+}
+
+h1 {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  top: 60%;
+  left: 1%;
+  color: brown;
 }
