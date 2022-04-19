@@ -10,7 +10,7 @@ p {
   display: flex;
   position: absolute;
   max-width: 30%;
-  right: 41%;
+  right: 45%;
   top: 7%;
   color: violet;
   font-size: 120px;
@@ -36,10 +36,6 @@ p {
 }
 
 .tennis1 {
-  display: flex;
-  position: absolute;
-  max-width: 35%;
-  max-height: 50%;
   left: 10%;
   top: 50%;
 }
@@ -54,10 +50,6 @@ p {
 }
 
 .tennis2 {
-  display: flex;
-  position: absolute;
-  max-width: 35%;
-  max-height: 50%;
   top: 50%;
   left: 53%;
 }
@@ -72,10 +64,6 @@ p {
 }
 
 .tennis3 {
-  display: flex;
-  position: absolute;
-  max-width: 35%;
-  max-height: 50%;
   top: 120%;
   left: 10%;
 }
@@ -90,13 +78,13 @@ p {
 }
 
 .tennis4 {
-  display: flex;
-  position: absolute;
-  max-height: 50%;
   top: 120%;
   left: 53%;
 }
 .tennis {
+  display: flex;
+  position: absolute;
+  max-height: 50%;
   transition: 0.5s;
 }
 
