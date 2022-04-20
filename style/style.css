@@ -40,7 +40,6 @@ p {
   position: absolute;
   right: 1px;
   top: 30%;
-  border: 2px solid black;
 }
 
 .topnav a {
@@ -56,7 +55,7 @@ p {
   padding: 12px;
   margin-right: 0;
   font-size: 17px;
-  border: none;
+  outline: none;
 }
 
 .search-container {
@@ -81,12 +80,8 @@ p {
 }
 
 .book {
-  display: flex;
-  position: absolute;
   top: 100%;
   left: 20%;
-  font-size: 30px;
-  color: red;
 }
 
 .tennis2 {
@@ -96,12 +91,8 @@ p {
 }
 
 .training {
-  display: flex;
-  position: absolute;
   top: 100%;
   left: 60%;
-  font-size: 30px;
-  color: red;
 }
 
 .tennis3 {
@@ -111,12 +102,8 @@ p {
 }
 
 .match {
-  display: flex;
-  position: absolute;
   top: 170%;
   left: 20%;
-  font-size: 30px;
-  color: red;
 }
 
 .tennis4 {
@@ -191,19 +178,19 @@ p {
 }
 
 .shop {
-  display: flex;
-  position: absolute;
   top: 170%;
   left: 60%;
-  font-size: 30px;
-  color: red;
 }
 
-.book:hover,
-.training:hover,
-.match:hover,
-.shop:hover {
-  color: blue;
+.event {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  color: black;
+}
+
+.event:hover {
+  color: red;
 }
 
 table,
@@ -211,14 +198,14 @@ tr {
   display: flex;
   top: 180%;
   left: 2%;
-  padding-top: 5%;
+  padding-top: 1%;
 }
 
 tr a {
   color: black;
 }
 
-tr a:hover {
+td a:hover {
   color: red;
 }
 
@@ -233,10 +220,43 @@ table {
 
 th,
 td {
-  display: flex;
   position: relative;
   padding-top: 15%;
   padding-left: 30px;
+}
+
+.icons a {
+  font-size: 30px;
+  padding: 10px 19px;
+}
+
+.icons a:hover {
+  color: black;
+}
+
+iframe {
+  display: flex;
+  position: absolute;
+  top: 220%;
+  right: 10%;
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.location {
+  display: flex;
+  position: absolute;
+  top: 47%;
+  left: 145%;
+  width: 100%;
+  font-size: 20px;
+}
+
+.informations {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 121%;
 }
 
 .background {
