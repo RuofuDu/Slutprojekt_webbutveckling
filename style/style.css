@@ -36,6 +36,7 @@ p {
 }
 
 .tennis1 {
+  max-height: 50%;
   left: 10%;
   top: 50%;
 }
@@ -50,6 +51,7 @@ p {
 }
 
 .tennis2 {
+  max-height: 50%;
   top: 50%;
   left: 53%;
 }
@@ -64,6 +66,7 @@ p {
 }
 
 .tennis3 {
+  max-height: 50%;
   top: 120%;
   left: 10%;
 }
@@ -80,19 +83,72 @@ p {
 .tennis4 {
   top: 120%;
   left: 53%;
+  max-height: 50%;
 }
 .tennis {
   display: flex;
   position: absolute;
-  max-height: 50%;
   transition: 0.5s;
 }
 
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 .tennis:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  transition-duration: 1s;
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .shop {
