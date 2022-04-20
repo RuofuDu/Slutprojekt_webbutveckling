@@ -206,31 +206,37 @@ p {
   color: blue;
 }
 
-.twitter {
+table,
+tr {
   display: flex;
-  position: absolute;
-  top: 200%;
-  right: 10%;
-  max-width: 10%;
-  max-height: 10%;
+  top: 180%;
+  left: 2%;
+  padding-top: 5%;
 }
 
-.ins {
-  display: flex;
-  position: absolute;
-  top: 200%;
-  right: 20%;
-  max-width: 10%;
-  max-height: 10%;
+tr a {
+  color: black;
 }
 
-.facebook {
+tr a:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
   display: flex;
   position: absolute;
-  top: 200%;
-  right: 2%;
-  max-width: 10%;
-  max-height: 10%;
+}
+
+th,
+td {
+  display: flex;
+  position: relative;
+  padding-top: 15%;
+  padding-left: 30px;
 }
 
 .background {
