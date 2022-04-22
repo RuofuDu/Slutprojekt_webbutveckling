@@ -193,19 +193,19 @@ p {
   color: red;
 }
 
-table,
+.aboutus,
 tr {
   display: flex;
   top: 180%;
-  left: 2%;
+  left: 5%;
   padding-top: 1%;
 }
 
-tr a {
+.aboutus tr a {
   color: black;
 }
 
-td a:hover {
+.aboutus td a:hover {
   color: red;
 }
 
@@ -218,8 +218,8 @@ table {
   position: absolute;
 }
 
-th,
-td {
+.aboutus th,
+.aboutus td {
   position: relative;
   padding-top: 15%;
   padding-left: 30px;
@@ -246,7 +246,7 @@ iframe {
 .location {
   display: flex;
   position: absolute;
-  top: 47%;
+  top: 17%; 多用margin padding
   left: 145%;
   width: 100%;
   font-size: 20px;
