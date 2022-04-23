@@ -5,41 +5,34 @@
 body {
   overflow-x: hidden;
 }
-
-p {
+#intro {
   display: flex;
-  position: absolute;
-  max-width: 30%;
-  right: 45%;
-  top: 7%;
+  flex-direction: row;
+}
+h1 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
   color: violet;
   font-size: 120px;
   font-family: "Grape Nuts", sans-serif;
 }
 
 .logo1 {
-  display: flex;
-  position: absolute;
   max-width: 30%;
   max-height: 55%;
-  left: 0%;
-  top: 0%;
 }
 
 .logo2 {
-  display: flex;
-  position: absolute;
-  max-width: 20%;
-  max-height: 35%;
-  right: 0%;
-  top: 0%;
+  max-width: 18%;
+  margin-left: 2%;
 }
 
 .topnav {
   overflow: hidden;
   position: absolute;
   right: 1px;
-  top: 30%;
+  margin-top: 0px;
 }
 
 .topnav a {
@@ -73,48 +66,65 @@ p {
   background: black;
 }
 
-.tennis1 {
-  max-height: 50%;
-  left: 10%;
-  top: 50%;
-}
-
-.book {
-  top: 100%;
-  left: 20%;
-}
-
-.tennis2 {
-  max-height: 50%;
-  top: 50%;
-  left: 53%;
-}
-
-.training {
-  top: 100%;
-  left: 60%;
-}
-
-.tennis3 {
-  max-height: 50%;
-  top: 120%;
-  left: 10%;
-}
-
-.match {
-  top: 170%;
-  left: 20%;
-}
-
-.tennis4 {
-  top: 120%;
-  left: 53%;
-  max-height: 50%;
-}
 .tennis {
   display: flex;
   position: absolute;
   transition: 0.5s;
+}
+
+.tennis1 {
+  max-height: 50%;
+  margin-top: 6%;
+  margin-left: 10%;
+}
+
+.book {
+  margin-top: 30%;
+  margin-left: 21%;
+}
+
+.tennis2 {
+  max-height: 50%;
+  margin-top: 4.5%;
+  margin-left: 52%;
+}
+
+.training {
+  margin-top: 28%;
+  margin-left: 60%;
+}
+
+.tennis3 {
+  max-height: 50%;
+  margin-left: 10%;
+  margin-top: 37%;
+}
+
+.match {
+  margin-top: 61%;
+  margin-left: 21%;
+}
+
+.tennis4 {
+  margin-top: 37%;
+  margin-left: 54%;
+  max-height: 50%;
+}
+
+.shop {
+  margin-top: 61%;
+  margin-left: 60%;
+}
+
+.event {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  color: black;
+}
+
+.event:hover {
+  color: red;
 }
 
 @-webkit-keyframes swing {
@@ -177,88 +187,47 @@ p {
   animation-iteration-count: 1;
 }
 
-.shop {
-  top: 170%;
-  left: 60%;
-}
-
-.event {
-  display: flex;
-  position: absolute;
-  font-size: 30px;
-  color: black;
-}
-
-.event:hover {
-  color: red;
-}
-
-.aboutus,
-tr {
-  display: flex;
-  top: 180%;
-  left: 5%;
-  padding-top: 1%;
-}
-
-.aboutus tr a {
-  color: black;
-}
-
-.aboutus td a:hover {
-  color: red;
-}
-
 a {
   text-decoration: none;
 }
 
-table {
-  display: flex;
-  position: absolute;
-}
-
-.aboutus th,
-.aboutus td {
-  position: relative;
-  padding-top: 15%;
-  padding-left: 30px;
+.icons {
+  float: right;
+  padding-top: 5%;
 }
 
 .icons a {
   font-size: 30px;
   padding: 10px 19px;
-}
-
-.icons a:hover {
   color: black;
 }
 
-iframe {
-  display: flex;
-  position: absolute;
-  top: 220%;
-  right: 10%;
-  max-width: 30%;
-  max-height: 30%;
+.icons a:hover {
+  color: red;
 }
 
-.location {
-  display: flex;
-  position: absolute;
-  top: 17%; 多用margin padding
-  left: 145%;
+iframe {
+  padding-top: 70%;
+  margin-left: 60%;
+  max-width: 30%;
+}
+
+h2 {
   width: 100%;
   font-size: 20px;
+  padding-top: 1%;
+  padding-left: 70%;
 }
 
 .informations {
   display: flex;
-  position: absolute;
-  top: 80%;
-  left: 121%;
+  float: right;
+  flex-direction: row-reverse;
 }
-
+.informations p {
+  width: 12%;
+  padding: 1%;
+}
 .background {
   display: flex;
   position: absolute;
@@ -271,8 +240,6 @@ iframe {
   position: absolute;
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  top: 0;
-  left: 0;
   background-color: yellow;
 }
 
@@ -281,7 +248,7 @@ iframe {
   background-color: blue;
 }
 
-h1 {
+h3 {
   display: flex;
   position: absolute;
   font-size: 30px;

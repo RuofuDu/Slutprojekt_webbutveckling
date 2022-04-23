@@ -21,9 +21,9 @@
   <body style="background-image: url('images/.jpg')">
     <script src="app.js"></script>
     <header>
-      <p>Tennisklubb</p>
-      <div>
+      <div id="intro">
         <img class="logo1" src="images/tennislogo.jpg" />
+        <h1>Tennisklubb</h1>
         <img class="logo2" src="images/tennislogo2.jpg" />
       </div>
       <div class="topnav">
@@ -36,65 +36,37 @@
       </div>
     </header>
     <main>
-      <img
-        class="tennis1 tennis"
-        src="images/spelatennis1.jpg"
-        alt="boka bana"
-      />
-      <img
-        class="tennis2 tennis"
-        src="images/spelatennis3.jpg"
-        alt="vara med träning"
-      />
-      <img class="tennis3 tennis" src="images/spelatennis2.jpg" alt="match" />
-      <img
-        class="tennis4 tennis"
-        src="images/tennisshop.jpg"
-        alt="tennisshop"
-      />
-      <a class="book event" href="bokning.html">Boka bana</a>
-      <a class="training event" href="index.html">Vara med träning</a>
-      <a class="match event" href="index.html">Tävlingen</a>
-      <a class="shop event" href="index.html">Köpa tennisutrustning</a>
+      <div>
+        <img
+          class="tennis1 tennis"
+          src="images/spelatennis1.jpg"
+          alt="boka bana"
+        />
+        <a class="book event" href="bokning.html">Boka bana</a>.
+      </div>
+      <div>
+        <img
+          class="tennis2 tennis"
+          src="images/spelatennis3.jpg"
+          alt="vara med träning"
+        />
+        <a class="training event" href="index.html">Vara med träning</a>
+      </div>
+      <div>
+        <img class="tennis3 tennis" src="images/spelatennis2.jpg" alt="match" />
+        <a class="match event" href="index.html">Tävlingen</a>
+      </div>
+      <div>
+        <img
+          class="tennis4 tennis"
+          src="images/tennisshop.jpg"
+          alt="tennisshop"
+        />
+        <a class="shop event" href="index.html">Köpa tennisutrustning</a>
+      </div>
     </main>
     <footer>
-      <table class="aboutus">
-        <tr>
-          <th>träning</th>
-          <th>Träningcentrum</th>
-          <th>Bli medlem</th>
-        </tr>
-        <tr>
-          flexbox处理，不用表格，可以使media query简单
-          <td><a href="">Gruppträning</a></td>
-          <td><a href="">Online Training - testa gratis</a></td>
-          <td><a href="">Personlig träning</a></td>
-        </tr>
-        <tr>
-          <td><a href="">Träningsprogram</a></td>
-          <td><a href="">Unika träningskoncept</a></td>
-          <td><a href="">Vad är ditt mål?</a></td>
-        </tr>
-        <tr>
-          <td><a href="">Medlemskap</a></td>
-          <td><a href="">Våra priser</a></td>
-          <td><a href="">Varför SATS?</a></td>
-        </tr>
-        <tr>
-          <td><a href="">Regler & villkor</a></td>
-          <td><a href="">PT Start</a></td>
-          <td><a href="">Kontakta mig</a></td>
-        </tr>
-        <td class="icons">
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
-          <a href=""><i class="fa-brands fa-snapchat"></i></a>
-          <a href=""><i class="fa-brands fa-tiktok"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </td>
+      <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d985.3095787408524!2d18.04754578956416!3d59.46197364371934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9bd0ea7c7d0d%3A0x4617b01a689bd6ab!2sT%C3%A4by%20Tennisklubb!5e0!3m2!1ssv!2sse!4v1650458089628!5m2!1ssv!2sse"
           width="600"
@@ -104,17 +76,25 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <tr>
-          <td class="location">Hittar oss</td>
-        </tr>
-        <tr class="informations">
-          <td>
-            POSTADRESS: täby tennisklubb TK - Tennis Anbudsvägen 41 18364 Täby
-          </td>
-          <td>KONTAKT: Tel: +4687562202 E-post: info@nptk.se</td>
-          <td>BESÖKSADRESS: Anbudsvägen 41 18364 Täby</td>
-        </tr>
-      </table>
+        <h2>hittar oss</h2>
+      </div>
+      <div class="icons">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="informations">
+        <p>
+          POSTADRESS: täby tennisklubb TK - Tennis Anbudsvägen 41 18364 Täby
+        </p>
+        <p>KONTAKT: Tel: +4687562202 E-post: info@nptk.se</p>
+        <p>BESÖKSADRESS: Anbudsvägen 41 18364 Täby</p>
+      </div>
     </footer>
   </body>
 </html>
