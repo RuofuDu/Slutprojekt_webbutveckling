@@ -249,29 +249,32 @@ h2 {
   background-color: black;
 }
 
-h3 {
-  display: flex;
-  position: absolute;
+.bokainfo {
+  display: block;
+  margin-top: 25%;
+}
+
+.bokainfo p {
+  position: relative;
   font-size: 30px;
-  padding-top: 25%;
+  padding-top: 1%;
   padding-left: 2%;
   color: brown;
 }
 
 table {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  margin-top: 30%;
-  margin-left: 20%;
+  margin-top: 6%;
+  margin-left: 10%;
   border-collapse: collapse;
-  width: 100%;
 }
 
 th,
 td {
   border: 1px solid black;
   text-align: center;
-  padding: 10px 30px;
+  padding: 10px 10px;
 }
 
 td a {
@@ -440,5 +443,42 @@ span.psw {
   }
   .cancelbtn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .tennis {
+    margin-left: 30%;
+  }
+  .tennis1 {
+    margin-top: 5%;
+  }
+  .tennis2 {
+    margin-top: 35%;
+  }
+  .tennis3 {
+    margin-top: 65%;
+  }
+  .tennis4 {
+    margin-top: 95%;
+  }
+  .event {
+    margin-left: 40%;
+  }
+  .book {
+    margin-top: 30%;
+  }
+  .training {
+    margin-top: 60%;
+  }
+  .match {
+    margin-top: 90%;
+  }
+  .shop {
+    margin-top: 120%;
+    margin-left: 35%;
+  }
+  iframe {
+    margin-top: 60%;
   }
 }
