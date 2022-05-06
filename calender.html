@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 62.5%">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,35 +9,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="container">
-      <div class="calendar">
-        <div class="month">
-          <i class="fas fa-angle-left prev"></i>
-          <div class="date">
-            <h1></h1>
-            <p></p>
+    <header>
+      <img class="background" src="images/bokabackground3.jpg" />
+      <a class="back" href="login.html">baka till login sida</a>
+    </header>
+    <main>
+      <div class="container">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">
+              <h1></h1>
+              <p></p>
+            </div>
+            <i class="fas fa-angle-right next"></i>
           </div>
-          <i class="fas fa-angle-right next"></i>
+          <div class="weekdays">
+            <div><a href="bokning.html">Sun</a></div>
+            <div><a href="bokning.html">Mon</a></div>
+            <div><a href="bokning.html">Tue</a></div>
+            <div><a href="bokning.html">Wed</a></div>
+            <div><a href="bokning.html">Thu</a></div>
+            <div><a href="bokning.html">Fri</a></div>
+            <div><a href="bokning.html">Sat</a></div>
+          </div>
+          <div class="days"></div>
         </div>
-        <div class="weekdays">
-          <div><a href="bokning.html">Sun</a></div>
-          <div><a href="bokning.html">Mon</a></div>
-          <div><a href="bokning.html">Tue</a></div>
-          <div><a href="bokning.html">Wed</a></div>
-          <div><a href="bokning.html">Thu</a></div>
-          <div><a href="bokning.html">Fri</a></div>
-          <div><a href="bokning.html">Sat</a></div>
-        </div>
-        <div class="days"></div>
       </div>
-    </div>
-
+    </main>
     <script src="calender.js"></script>
   </body>
 </html>

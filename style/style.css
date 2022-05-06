@@ -1,7 +1,9 @@
 * {
   padding: 0%;
   margin: 0%;
+  box-sizing: border-box;
 }
+
 body {
   overflow-x: hidden;
 }
@@ -166,10 +168,10 @@ h1 {
 
 .advertiseimage {
   position: absolute;
-  top: 210%;
+  top: 202%;
   left: 7%;
   width: 40%;
-  height: 90%;
+  height: 100%;
 }
 
 .advertise p {
@@ -376,4 +378,114 @@ input[type="password"] {
 
 .login a:hover {
   color: yellow;
+}
+
+/*如何仅仅fixa calender.html页面的字体，而不是所有页面的字体都被控制？
+已用HTML内置style解决，但并非最佳方案*/
+/*
+html （这里该如何起名？）{        
+  font-size: 62.5%;
+}*/
+
+.container {
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26%;
+}
+
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  background-color: #222227;
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer; /*这个的作用是当鼠标hover这个地方的时候，光标由箭头变成了手指，表示可以点选*/
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays a {
+  color: white;
+}
+
+.weekdays a:hover {
+  color: red;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
 }

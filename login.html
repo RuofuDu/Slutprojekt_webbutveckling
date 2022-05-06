@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/tennis.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style/style.css" />
-    <title>Tennisklubb</title>
+    <title>Inloggning</title>
   </head>
   <body>
     <header>
@@ -30,23 +30,25 @@
           upptagen. Om tiden blir ledig meddelas du via epost. Alla reserver
           meddelas så det är "först till kvarn"- principen som gäller.
         </p>
-        <a href="login.html">Om du har glömt ditt lösenord</a>
       </div>
       <div class="loginbox">
-        <h1>Login here</h1>
-        <form>
-          <p>Username</p>
-          <input type="text" name="" placeholder="Enter Username" />
-          <p>Password</p>
-          <input type="password" name="" placeholder="Enter password" />
-          <a href="bokning.html">
-            <input type="submit" name="" value="login"
-          /></a>
-          <a href="#">Lost your password</a><br />
-          <a href="#">Don't have an account?</a>
+        <h1>Logga in här</h1>
+        <form action="calender.html">
+          <p>Användare namn</p>
+          <input id="mail" type="text" placeholder="Ange ditt mejl" />
+          <p>Lösenord</p>
+          <input
+            id="password"
+            type="password"
+            placeholder="Ange ditt lösenord"
+          />
+          <input id="submit" type="submit" value="logga in" />
+          <span id="errorMessage"></span>
+          <a href="#">Om du har glömt ditt lösenord</a><br />
+          <a href="#">Om du har inte konto?</a>
         </form>
       </div>
     </main>
-    <script src="app.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
