@@ -420,7 +420,7 @@ html （这里该如何起名？）{
 .month h1 {
   font-size: 3rem;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: uppercase; /*stor eller små bokstäver*/
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
 }

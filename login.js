@@ -1,6 +1,6 @@
 let submit = document.getElementById("submit");
 let errorMessage = document.getElementById("errorMessage");
-let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+let mailformat = /^\S+@\S+\.\S+$/i;
 submit.addEventListener("click", function (event) {
     let email = document.getElementById("mail");
     let password = document.getElementById("password");
@@ -12,9 +12,14 @@ submit.addEventListener("click", function (event) {
     }
     else {
         let regexp = RegExp(mailformat)
-        if (regexp.test(email) == false) {
+        console.log(mailformat, email.value, regexp.test(email))
+        if (regexp.test(email.value) == false) {
             event.preventDefault();
             errorMessage.innerHTML = "Du måste ange ett lämpligt mail adress";
+        }
+        else {
+            localStorage.setItem("email", JSON.stringify(email.value))
+            localStorage.setItem("password", JSON.stringify(password.value))
         }
     }
 })
