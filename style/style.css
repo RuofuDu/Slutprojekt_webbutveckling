@@ -164,6 +164,24 @@ h1 {
   animation-iteration-count: 1;
 }
 
+.advertiseimage {
+  position: absolute;
+  top: 210%;
+  left: 7%;
+  width: 40%;
+  height: 90%;
+}
+
+.advertise p {
+  position: absolute;
+  top: 190%;
+  left: 12%;
+  max-width: 50%;
+  color: violet;
+  font-size: 60px;
+  font-family: "Grape Nuts", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -184,15 +202,16 @@ a {
 }
 
 iframe {
-  padding-top: 70%;
-  margin-left: 60%;
+  position: absolute;
+  top: 190%;
+  left: 60%;
   max-width: 30%;
 }
 
 h2 {
   width: 100%;
   font-size: 20px;
-  padding-top: 1%;
+  margin-top: 107%;
   padding-left: 70%;
 }
 
@@ -269,7 +288,7 @@ tr:nth-child(even) {
 .logininfo {
   position: relative;
   padding-top: 30%;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 .logininfo h4 {
@@ -278,7 +297,7 @@ tr:nth-child(even) {
 }
 
 .logininfo p {
-  width: 50%;
+  width: 90%;
   padding: 1%;
 }
 
@@ -288,4 +307,73 @@ tr:nth-child(even) {
 
 .logininfo a:hover {
   color: red;
+}
+
+.loginbox {
+  position: absolute;
+  width: 320px;
+  height: 420px;
+  background: black;
+  color: white;
+  margin-top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.loginbox h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: red;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: yellow;
+  color: black;
+}
+
+.loginbox a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login a:hover {
+  color: yellow;
 }
