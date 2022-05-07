@@ -87,12 +87,12 @@ h1 {
 
 .tennis2 {
   max-height: 50%;
-  margin-top: 4.5%;
+  margin-top: 6%;
   margin-left: 52%;
 }
 
 .training {
-  margin-top: 28%;
+  margin-top: 30%;
   margin-left: 60%;
 }
 
@@ -481,6 +481,7 @@ html （这里该如何起名？）{
   background-color: red;
 }
 
+/*
 @media screen and (max-width: 1252px) {
   .body {
     width: 50%;
@@ -493,15 +494,43 @@ html （这里该如何起名？）{
     left: -18%;
   }
   .tennis3 {
-    top: 120%;
+    top: 112%;
     left: 25%;
   }
   .tennis4 {
-    top: 200%;
+    top: 185%;
     left: -18%;
   }
-
-  .advertise p .advertiseimage {
-    position: absolute;
+  .book {
+    left: 25%;
+  }
+  .training {
+    top: 112%;
+    left: -18%;
+  }
+  .match {
+    top: 113%;
+    left: 25%;
+  }
+  .shop {
+    left: -18%;
+    top: 185%;
+  }
+  .advertise p {
+    top: 345%;
+  }
+  .advertiseimage {
+    top: 370%;
+  }
+  iframe {
+    top: 330%;
+  }
+  h2 {
+    padding-top: 70%;
+  }
+  .icons {
+    position: relative;
+    padding-top: 10%;
   }
 }
+*/
