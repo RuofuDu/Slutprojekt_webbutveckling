@@ -1,13 +1,13 @@
-const date = new Date();
-
+const date = new Date(); //funktion som alltid uppdatera tiden 
+console.log(date);
 const renderCalendar = () => {
-  date.setDate(1);
+  date.setDate(1);// sätta datum från 1
 
-  const monthDays = document.querySelector(".days");
+  const monthDays = document.querySelector(".days");//The querySelector() method returns the first element that matches a CSS selector.
 
   const lastDay = new Date(
-    date.getFullYear(),
-    date.getMonth() + 1,
+    date.getFullYear(),// funktion som kan visa år enligt "date" som du angav
+    date.getMonth() + 1, //funktion som få nuvarande månad, januari=0, febrari=1... därför måste + 1
     0
   ).getDate();
 
@@ -80,3 +80,9 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+//在日历上本月今天之前的日期都自动更新成暗色，并且无法点选连接到bookning.html
+
+//再bookning.html的表格里随着时间的更新表格可预订场地的时间块也要更新，如现在是16点，
+//那么该日8到16点的场地就显示已无法预定, 每小时更新一次，过去的那一个小时可以显示如该时间已无法预定等
+//之后的其他日子则所有时间都可以预定
