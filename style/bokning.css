@@ -1,20 +1,20 @@
 .bokainfo ul {
-  margin-top: 25%;
-  margin-left: 4%;
+  margin-top: 29%;
+  margin-left: 10%;
 }
 
 .bokainfo li {
   position: relative;
   font-size: 30px;
-  padding-top: 1%;
+  padding-top: 2%;
   color: brown;
 }
 
 .bokainfo button {
   position: relative;
   display: flex;
-  left: 45%;
-  bottom: 75px;
+  left: 52%;
+  bottom: 83px;
   color: red;
   cursor: pointer;
 }
@@ -28,7 +28,7 @@
 table {
   position: absolute;
   display: inline-block;
-  margin-top: 6%;
+  margin-top: 3%;
   margin-left: 10%;
   border-collapse: collapse;
 }
