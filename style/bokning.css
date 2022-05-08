@@ -13,10 +13,12 @@
 .bokainfo button {
   position: relative;
   display: flex;
-  left: 52%;
-  bottom: 83px;
+  padding: 10px 15px;
+  left: 53%;
+  bottom: 96px;
   color: red;
   cursor: pointer;
+  font-size: large;
 }
 
 #bookingTable {

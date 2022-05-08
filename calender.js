@@ -81,6 +81,7 @@ document.querySelector(".next").addEventListener("click", () => {
 
 renderCalendar();
 
+//调整已预定场地格式，使更为整齐
 
 // media query
 
