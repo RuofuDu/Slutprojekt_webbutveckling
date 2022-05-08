@@ -135,7 +135,7 @@ function confirm() {
             operable[i].innerHTML = "";
         }        
     }
-    alert("Okay");
+    alert("Du har bokat/avbokat banan");
     bookedhour = 0;
     cancelledhour = 0;
     amount = 0;
