@@ -86,7 +86,7 @@ function confirm() {
             operable[i].innerHTML = "";
         }        
     }
-    alert("Du har bokat/avbokat banan");
+    alert("Du har klarat bokning/avbokning");
     bookedhour = 0;
     cancelledhour = 0;
     amount = 0;
