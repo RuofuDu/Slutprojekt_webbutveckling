@@ -8,6 +8,14 @@ body {
   overflow-x: hidden;
 }
 
+.background {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-height: 60%;
+}
+
 #intro {
   display: flex;
   flex-direction: row;
@@ -69,13 +77,13 @@ h1 {
   background: black;
 }
 
-.navbar {
+nav {
   position: absolute;
   background-color: black;
   color: red;
 }
 
-.navbar a {
+nav a {
   float: left;
   font-size: 16px;
   text-align: center;
@@ -285,12 +293,6 @@ h2 {
 .informations p {
   width: 12%;
   padding: 1%;
-}
-.background {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  max-height: 60%;
 }
 
 .back {

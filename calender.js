@@ -82,11 +82,11 @@ document.querySelector(".next").addEventListener("click", () => {
 renderCalendar();
 
 
+// media query
+
 // backgrounds bild
 
 //html tabell已用JavaScript做了可不可以？
-
-// media query
 
 //css ta bort oanvändbar kode
 

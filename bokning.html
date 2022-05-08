@@ -1,111 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/tennis.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/bokning.css" />
     <title>Bookning</title>
   </head>
   <body>
     <header>
-      <img
-        class="background"
-        src="images/bokabackground3.jpg"
-        alt="backgroundsbild"
-      />
+      <img class="background" src="images/bokabackground3.jpg" />
       <a class="back" href="calender.html">baka till calender sida</a>
     </header>
     <main>
-      <div class="bokainfo">
-        <ul>
-          <li>Klicka för att boka bana</li>
-          <li>Röd betyder bana har blivit bokad under den här tiden!</li>
-        </ul>
-      </div>
-      <table>
-        <tr>
-          <th></th>
-          <th>kl 8-9</th>
-          <th>kl 9-10</th>
-          <th>kl 10-11</th>
-          <th>kl 11-12</th>
-          <th>kl 12-13</th>
-          <th>kl 13-14</th>
-          <th>kl 14-15</th>
-          <th>kl 15-16</th>
-          <th>kl 16-17</th>
-          <th>kl 17-18</th>
-          <th>kl 18-19</th>
-          <th>kl 19-20</th>
-          <th>kl 20-21</th>
-        </tr>
-        <tr>
-          <td>bana 1</td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-        </tr>
-        <tr>
-          <td>bana 2</td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-        </tr>
-        <tr>
-          <td>bana 3</td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-        </tr>
-        <tr>
-          <td>bana 4</td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-          <td class="boka"><a href=""></a></td>
-        </tr>
-      </table>
+      <sektion class="bokainfo">
+        <p>Klicka för att boka bana</p>
+        <p>Röd betyder bana har blivit bokad under den här tiden!</p>
+        <p>
+          Boka: <span id="bookedhour"></span> hours, avboka:
+          <span id="cancelledhour"></span> hours, price:
+          <span id="amount"></span> kr.
+        </p>
+        <button id="confirm" onclick="confirm()">bekräfta</button>
+      </sektion>
+      <table id="bookingTable"></table>
     </main>
     <footer></footer>
     <script src="bokning.js"></script>
