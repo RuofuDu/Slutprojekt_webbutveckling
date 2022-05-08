@@ -1,8 +1,57 @@
+.bokainfo ul {
+  margin-top: 25%;
+  margin-left: 4%;
+}
+
+.bokainfo li {
+  position: relative;
+  font-size: 30px;
+  padding-top: 1%;
+  color: brown;
+}
+
+.bokainfo button {
+  position: relative;
+  display: flex;
+  left: 45%;
+  bottom: 75px;
+  color: red;
+  cursor: pointer;
+}
+
 #bookingTable {
   border-width: 2px;
   border-style: solid;
   border-color: blue;
 }
+
+table {
+  position: absolute;
+  display: inline-block;
+  margin-top: 6%;
+  margin-left: 10%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+td a {
+  color: black;
+}
+
+td a:hover {
+  color: red;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 .header {
   background-color: white;
 }

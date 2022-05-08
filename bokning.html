@@ -16,18 +16,19 @@
     </header>
     <main>
       <sektion class="bokainfo">
-        <p>Klicka för att boka bana</p>
-        <p>Röd betyder bana har blivit bokad under den här tiden!</p>
-        <p>
-          Boka: <span id="bookedhour"></span> hours, avboka:
-          <span id="cancelledhour"></span> hours, price:
-          <span id="amount"></span> kr.
-        </p>
+        <ul>
+          <li>Klicka för att boka bana</li>
+          <li>Klicka "bekräfta" när du klara bokningen!</li>
+          <li>
+            Boka: <span id="bookedhour"></span> hours, avboka:
+            <span id="cancelledhour"></span> hours, price:
+            <span id="amount"></span> kr.
+          </li>
+        </ul>
         <button id="confirm" onclick="confirm()">bekräfta</button>
       </sektion>
       <table id="bookingTable"></table>
     </main>
-    <footer></footer>
     <script src="bokning.js"></script>
   </body>
 </html>

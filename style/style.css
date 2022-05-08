@@ -8,14 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-.background {
-  display: flex;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  max-height: 60%;
-}
-
 #intro {
   display: flex;
   flex-direction: row;
@@ -295,6 +287,14 @@ h2 {
   padding: 1%;
 }
 
+.background {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-height: 60%;
+}
+
 .back {
   position: relative;
   padding: 0px 0px;
@@ -497,45 +497,6 @@ html （这里该如何起名？）{
 
 .today {
   background-color: red;
-}
-
-.bokainfo ul {
-  margin-top: 25%;
-  margin-left: 4%;
-}
-
-.bokainfo li {
-  position: relative;
-  font-size: 30px;
-  padding-top: 1%;
-  color: brown;
-}
-
-table {
-  position: absolute;
-  display: inline-block;
-  margin-top: 6%;
-  margin-left: 10%;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border: 1px solid black;
-  text-align: center;
-  padding: 10px 10px;
-}
-
-td a {
-  color: black;
-}
-
-td a:hover {
-  color: red;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
 }
 
 @media screen and (max-width: 1252px) {

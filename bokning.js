@@ -20,7 +20,7 @@ for (let bana=1; bana < 5; bana++) {
         tdnode.classList.add('header');
         } else if (startTime > 15) {
             if (bana == 1) {
-                tdtext = "Tavling";
+                tdtext = "Tävling";
             } else if (bana ==2 ) {
                 tdtext = "Träning";
             } else if (bana ==4 ) {
