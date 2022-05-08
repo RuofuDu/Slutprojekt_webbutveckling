@@ -88,7 +88,7 @@ renderCalendar();
 
 //html tabell已用JavaScript做了可不可以？
 
-//css ta bort oanvändbar kode
+//css ta bort oanvändbar kode, förstå koden, spes js code, kommentera gärna!
 
 //在日历上本月今天之前的日期都自动更新成暗色，并且无法点选连接到bookning.html
 
