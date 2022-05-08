@@ -333,7 +333,7 @@ h2 {
   height: 420px;
   background: black;
   color: white;
-  top: 96%;
+  top: 93%;
   left: 73%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
@@ -405,12 +405,18 @@ html （这里该如何起名？）{
   font-size: 62.5%;
 }*/
 
+.chooseday li {
+  margin-top: 29%;
+  font-size: 25px;
+  margin-left: 10%;
+}
+
 .container {
   color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 26%;
+  margin-top: 5%;
 }
 
 .calendar {
