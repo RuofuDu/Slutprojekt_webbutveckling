@@ -1,0 +1,31 @@
+#bookingTable {
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+}
+.header {
+  background-color: white;
+}
+.adminbooked {
+  background-color: lightgray;
+}
+
+.bookable {
+  background-color: rgb(128, 203, 238);
+}
+
+.cancelled {
+  background-color: rgb(241, 177, 238);
+}
+
+.otherbooked {
+  background-color: rgb(201, 5, 5);
+}
+
+.ownbooked {
+  background-color: rgb(95, 109, 237);
+}
+
+.selected {
+  background-color: rgb(8, 233, 222);
+}
