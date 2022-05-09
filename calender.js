@@ -81,7 +81,6 @@ document.querySelector(".next").addEventListener("click", () => {
 
 renderCalendar();
 
-//调整已预, bokad, tävling定场地格式，使更为整齐
 
 // media query
 
