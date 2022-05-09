@@ -254,7 +254,7 @@ a {
 .icons {
   position: relative;
   float: right;
-  padding-top: 95%;
+  padding-top: 120%;
 }
 
 .icons a {
@@ -269,16 +269,17 @@ a {
 
 iframe {
   position: absolute;
-  top: 190%;
-  left: 60%;
-  max-width: 30%;
+  display: flex;
+  bottom: 50%;
+  margin-left: 130%;
+  max-width: 80%;
 }
 
 h2 {
-  width: 100%;
+  min-width: 100%;
   font-size: 20px;
-  margin-top: 109%;
-  padding-left: 70%;
+  margin-top: 59%;
+  margin-left: 160%;
 }
 
 .informations {
