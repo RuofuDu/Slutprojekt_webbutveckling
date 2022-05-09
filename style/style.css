@@ -574,23 +574,23 @@ tr:nth-child(even) {
 }
 
 .bookable {
-  background-color: rgb(128, 203, 238);
+  background-color: rgb(202, 206, 248);
 }
 
 .cancelled {
-  background-color: rgb(241, 177, 238);
+  background-color: gainsboro;
 }
 
 .otherbooked {
-  background-color: rgb(201, 5, 5);
+  background-color: red;
 }
 
 .ownbooked {
-  background-color: rgb(95, 109, 237);
+  background-color: blue;
 }
 
 .selected {
-  background-color: rgb(8, 233, 222);
+  background-color: gainsboro;
 }
 
 .main {
