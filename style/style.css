@@ -510,54 +510,96 @@ html （这里该如何起名？）{
   background-color: red;
 }
 
-@media screen and (max-width: 1252px) {
-  .body {
-    width: 50%;
-  }
-  .tennis1 {
-    left: 25%;
-  }
-  .tennis2 {
-    top: 110%;
-    left: -18%;
-  }
-  .tennis3 {
-    top: 112%;
-    left: 25%;
-  }
-  .tennis4 {
-    top: 185%;
-    left: -18%;
-  }
-  .book {
-    left: 25%;
-  }
-  .training {
-    top: 112%;
-    left: -18%;
-  }
-  .match {
-    top: 113%;
-    left: 25%;
-  }
-  .shop {
-    left: -18%;
-    top: 185%;
-  }
-  .advertise p {
-    top: 345%;
-  }
-  .advertiseimage {
-    top: 370%;
-  }
-  iframe {
-    top: 330%;
-  }
-  h2 {
-    padding-top: 70%;
-  }
-  .icons {
-    position: relative;
-    padding-top: 10%;
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bokainfo ul {
+  margin-top: 29%;
+  margin-left: 10%;
+}
+
+.bokainfo li {
+  position: relative;
+  font-size: 30px;
+  padding-top: 2%;
+  color: brown;
+}
+
+.bokainfo button {
+  position: relative;
+  display: flex;
+  padding: 10px 15px;
+  left: 53%;
+  bottom: 96px;
+  color: red;
+  cursor: pointer;
+  font-size: large;
+}
+
+#bookingTable {
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+}
+
+table {
+  position: absolute;
+  display: inline-block;
+  margin-top: 3%;
+  margin-left: 10%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+td a {
+  color: black;
+}
+
+td a:hover {
+  color: red;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.header {
+  background-color: white;
+}
+.adminbooked {
+  background-color: lightgray;
+}
+
+.bookable {
+  background-color: rgb(128, 203, 238);
+}
+
+.cancelled {
+  background-color: rgb(241, 177, 238);
+}
+
+.otherbooked {
+  background-color: rgb(201, 5, 5);
+}
+
+.ownbooked {
+  background-color: rgb(95, 109, 237);
+}
+
+.selected {
+  background-color: rgb(8, 233, 222);
+}
+
+@media screen and (max-width: 992px) {
+  .main figure {
+    width: 100%;
   }
 }
