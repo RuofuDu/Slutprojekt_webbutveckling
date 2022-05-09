@@ -510,11 +510,6 @@ html （这里该如何起名？）{
   background-color: red;
 }
 
-.main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .bokainfo ul {
   margin-top: 29%;
   margin-left: 10%;
@@ -596,6 +591,11 @@ tr:nth-child(even) {
 
 .selected {
   background-color: rgb(8, 233, 222);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 992px) {
