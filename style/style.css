@@ -252,9 +252,8 @@ a {
 }
 
 .icons {
-  position: relative;
   float: right;
-  padding-top: 120%;
+  margin-top: 120%;
 }
 
 .icons a {
