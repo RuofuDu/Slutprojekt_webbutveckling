@@ -593,11 +593,6 @@ tr:nth-child(even) {
   background-color: gainsboro;
 }
 
-.main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 @media screen and (max-width: 992px) {
   .main figure {
     width: 100%;
