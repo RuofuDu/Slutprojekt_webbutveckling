@@ -226,9 +226,12 @@ nav a {
   animation-iteration-count: 1;
 }
 
-.advertiseimage {
+.advertise {
   position: absolute;
-  top: 202%;
+  background-image: url(/images/reklam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 220%;
   left: 7%;
   width: 40%;
   height: 100%;
@@ -236,9 +239,9 @@ nav a {
 
 .advertise p {
   position: absolute;
-  top: 190%;
+  bottom: 100%;
   left: 12%;
-  max-width: 50%;
+  max-width: 100%;
   color: black;
   font-size: 60px;
   font-family: "Grape Nuts", sans-serif;
@@ -249,8 +252,9 @@ a {
 }
 
 .icons {
+  position: relative;
   float: right;
-  padding-top: 5%;
+  padding-top: 95%;
 }
 
 .icons a {
