@@ -84,6 +84,8 @@ renderCalendar();
 
 // media query
 
+// använda CSS background-image för backgrundsbild i sidan 2--
+
 //css ta bort oanvändbar kode, förstå koden, spes js code, kommentera gärna!
 
 //在日历上本月今天之前的日期都自动更新成暗色，并且无法点选连接到bookning.html
