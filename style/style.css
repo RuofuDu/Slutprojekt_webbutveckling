@@ -118,14 +118,16 @@ body {
 img {
   display: flex;
   height: auto;
-  max-width: 100%;
+  max-width: 80%;
+  margin: 2%;
 }
 
 figure {
-  padding: 1vh 1vw;
+  padding: 1vh 0;
   margin: 1vh 0;
   float: left;
   width: 49.99999%;
+  align-content: center;
 }
 
 @media screen and (max-width: 800px) {
