@@ -82,7 +82,7 @@ document.querySelector(".next").addEventListener("click", () => {
 renderCalendar();
 
 
-// media query
+// media query, background image!!
 
 // använda CSS background-image för backgrundsbild i sidan 2--
 
