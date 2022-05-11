@@ -4,49 +4,49 @@
     <meta charset="UTF-8" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Grape Nuts"
+      href=https://fonts.googleapis.com/css?family=Grape Nuts
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/tennis.ico" type="image/x-icon" />
+    
     <script
-      src="https://kit.fontawesome.com/92d1c8737b.js"
+      src=https://kit.fontawesome.com/92d1c8737b.js
       crossorigin="anonymous"
     ></script>
-
+ 
     <link rel="stylesheet" href="style/style.css" />
     <title>Tennisklubb</title>
   </head>
   <body>
     <header>
-      <div id="intro">
-        <img class="logo1" src="images/tennislogo.jpg" alt="tennislogo" />
-        <h1>Tennisklubb</h1>
-        <img class="logo2" src="images/tennislogo2.jpg" alt="tennislogo" />
-      </div>
-      <div class="topnav">
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search" />
-            <a href="index.html">sök</a>
-          </form>
+      <div class="menu" id="mymenu">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#match">Match</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#login">Login</a>
+        <a href="#book">Book</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>      
+      <div id="logo_nav">
+        <img id="logo" src="images/tennislogo.jpg" alt="tennislogo" />
+        <div id="nav_club">
+          <!--img src="images/tennislogo2.jpg" alt="tennislogo" /-->
+          <h1 id="club">Tennisklubb</h1>
         </div>
+ 
       </div>
-      <nav>
-        <div class="dropdown">
-          <button class="dropbtn">
-            Välja
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="login.html">Boka bana</a>
-            <a href="index.html">Nyheter</a>
-            <a href="index.html">Om klubben</a>
-            <a href="index.html">Kontakt oss</a>
-            <a href="index.html">Hitta jobb</a>
-          </div>
-        </div>
-      </nav>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <a href="index.html">sök</a>
+        </form>
+      </div>
     </header>
     <main>
       <figure>
@@ -56,7 +56,7 @@
           alt="boka bana"
         />
         <figcaption>
-          <a class="book event" href="login.html">Boka bana</a>
+          <a href="login.html">Boka bana</a>
         </figcaption>
       </figure>
       <figure>
@@ -66,13 +66,13 @@
           alt="vara med träning"
         />
         <figcaption>
-          <a class="training event" href="index.html">Vara med träning</a>
+          <a href="index.html">Vara med träning</a>
         </figcaption>
       </figure>
       <figure>
         <img class="tennis3 tennis" src="images/spelatennis2.jpg" alt="match" />
         <figcaption>
-          <a class="match event" href="index.html">Tävlingen</a>
+          <a href="index.html">Tävlingen</a>
         </figcaption>
       </figure>
       <figure>
@@ -82,7 +82,7 @@
           alt="tennisshop"
         />
         <figcaption>
-          <a class="shop event" href="index.html">Köpa tennisutrustning</a>
+          <a href="index.html">Köpa tennisutrustning</a>
         </figcaption>
       </figure>
     </main>
@@ -90,7 +90,7 @@
       <div class="advertise">
         <p>Låt oss spela tennis tillsammans!</p>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d985.3095787408524!2d18.04754578956416!3d59.46197364371934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9bd0ea7c7d0d%3A0x4617b01a689bd6ab!2sT%C3%A4by%20Tennisklubb!5e0!3m2!1ssv!2sse!4v1650458089628!5m2!1ssv!2sse"
+          src=https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d985.3095787408524!2d18.04754578956416!3d59.46197364371934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9bd0ea7c7d0d%3A0x4617b01a689bd6ab!2sT%C3%A4by%20Tennisklubb!5e0!3m2!1ssv!2sse!4v1650458089628!5m2!1ssv!2sse
           width="600"
           height="450"
           style="border: 0"
@@ -118,5 +118,15 @@
         <p>BESÖKSADRESS: Anbudsvägen 41 18364 Täby</p>
       </section>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mymenu");
+        if (x.className === "menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu";
+        }
+      }
+      </script>    
   </body>
 </html>
