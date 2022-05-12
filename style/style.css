@@ -3,13 +3,13 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 1vh 0;
+}
+
 header {
   display: block;
   margin: 1vh 1vw;
-}
-
-body {
-  margin: 1vh 0;
 }
 
 #logo_nav {
@@ -100,13 +100,13 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 17px;
-  padding: 13px;
+  padding: 14px;
   background: red;
 }
 
 .search-container input[type="text"] {
   padding: 12px;
-  margin-right: 0;
+  margin-right: -6px;
   font-size: 17px;
   outline: none;
 }
@@ -115,19 +115,19 @@ body {
   background: black;
 }
 
-img {
-  display: flex;
-  height: auto;
-  max-width: 80%;
-  margin: 2%;
-}
-
 figure {
   padding: 1vh 0;
   margin: 1vh 0;
   float: left;
-  width: 49.99999%;
+  width: 50%;
   align-content: center;
+}
+
+figure img {
+  display: flex;
+  height: auto;
+  max-width: 80%;
+  margin: 2%;
 }
 
 @media screen and (max-width: 800px) {
