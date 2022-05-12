@@ -224,9 +224,9 @@ h2 {
 
 .icons {
   display: flex;
-  float: right;
   width: 100%;
   height: auto;
+  margin: 0 1vw;
 }
 
 .icons a {
@@ -243,15 +243,15 @@ h2 {
   display: flex;
   max-width: 100%;
   height: auto;
-  float: right;
   flex-direction: row-reverse;
   margin-right: 5vw;
+  margin: 0 3vw 0 0;
 }
 
 .informations p {
   width: 100%;
   height: auto;
-  margin: 2vh 3vw;
+  margin: 2vh 2vw;
 }
 
 .background {
