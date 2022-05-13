@@ -17,23 +17,23 @@ header {
   margin: 1vh 1vw;
 }
 
-#logo_nav {
+.logo_nav {
   display: flex;
   width: 20%;
   margin: 1vh 1vw;
 }
 
-#nav_club {
+.nav_club {
   width: 80%;
   margin: 1vh 1vw;
 }
 
-#logo {
+.logo {
   margin: 1vh 1vw;
 }
 
-#club {
-  margin: 1vh 1vw;
+.club {
+  margin: 10vh 5vw;
   text-align: center;
   color: black;
   font-size: clamp(3rem, 10vw, 12rem);
@@ -42,7 +42,7 @@ header {
 
 .menu {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 .menu a {
@@ -56,43 +56,17 @@ header {
 }
 
 .menu a:hover {
-  background-color: #ddd;
+  background-color: gainsboro;
   color: black;
 }
 
 .menu a.active {
-  background-color: #04aa6d;
+  background-color: red;
   color: white;
 }
 
 .menu .icon {
   display: none;
-}
-
-@media screen and (max-width: 800px) {
-  .menu a:not(:first-child) {
-    display: none;
-  }
-  .menu a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .menu.responsive {
-    position: relative;
-  }
-  .menu.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .menu.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 
 .search-container {
@@ -145,15 +119,6 @@ figcaption a:hover {
   color: red;
 }
 
-@media screen and (max-width: 800px) {
-  figure {
-    padding: 1vh 1vw;
-    margin: 1vh 0;
-    float: left;
-    width: 100%;
-  }
-}
-
 @keyframes swing {
   15% {
     -webkit-transform: translateX(5px);
@@ -198,7 +163,7 @@ figure img:hover {
 
 .advertise {
   display: flex;
-  background-image: url(../images/reklam.jpg);
+  background-image: url(/images/reklam.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 80%;
@@ -211,7 +176,6 @@ figure img:hover {
   max-width: 80%;
   height: auto;
   margin: 10vh 7vw;
-  color: black;
   font-size: 60px;
   font-family: "Grape Nuts", sans-serif;
 }
@@ -220,7 +184,7 @@ iframe {
   display: flex;
   width: 50%;
   height: auto;
-  margin: 10vh 2vw 1vh 2vw; /*Two values apply to the top and bottom, then right and left.
+  margin: 10vh 0 1vh 12vw; /*Two values apply to the top and bottom, then right and left.
   Three values apply to the top, then right and left, then bottom.
   Four values apply to the top, then right, then bottom, then left.
 */
@@ -231,19 +195,19 @@ h2 {
   max-width: 100%;
   height: auto;
   font-size: 30px;
-  margin: 0 0 10vh 10vw;
+  margin: 0 0 10vh 18vw;
 }
 
 .icons {
   display: flex;
-  width: 100%;
+  width: 60%;
   height: auto;
-  margin: 0 1vw;
+  margin: 0 3vw;
 }
 
 .icons a {
   font-size: 30px;
-  padding: 10px 19px;
+  padding: 10px 9px;
   color: black;
 }
 
@@ -256,13 +220,13 @@ h2 {
   max-width: 100%;
   height: auto;
   flex-direction: row-reverse;
-  margin: 0 3vw 0 0;
+  margin: 0 1vw;
 }
 
 .informations p {
   width: 100%;
   height: auto;
-  margin: 1vh 1vw;
+  padding: 1vh 1vw;
 }
 
 .background {
@@ -567,20 +531,61 @@ tr:nth-child(even) {
   background-color: gainsboro;
 }
 
-@media screen and (max-width: 1192px) {
-  .loginbox {
-    width: 30%;
-    margin-left: 3%;
-    top: 95%;
-  }
-}
-
-@media screen and (max-width: 942px) {
-  .loginbox {
-    top: 80%;
-    margin-left: 4%;
-  }
-  .loginbox a {
+@media screen and (max-width: 800px) {
+  .menu a:not(:first-child) {
     display: none;
+  }
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+  .menu.responsive {
+    position: relative;
+  }
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .logo {
+    display: none;
+  }
+  .club {
+    font-size: 90px;
+    align-items: center;
+    margin: 5vh 9vw;
+  }
+  figure {
+    padding: 1vh 1vw;
+    margin: 1vh 0;
+    float: left;
+    width: 100%;
+  }
+  .event {
+    width: 100%;
+  }
+  .event h1 {
+    margin: 5vh 20vw;
+  }
+  iframe {
+    margin: 0 25vw;
+  }
+  h2 {
+    margin: 0 0 15vh 40vw;
+  }
+  .icons {
+    margin: 0 0 0 19vw;
+  }
+  .informations {
+    margin: 0 7vw 0 19vw;
+  }
+  .informations {
+    padding: 0 1vw;
   }
 }
