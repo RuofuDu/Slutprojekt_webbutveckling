@@ -5,6 +5,7 @@
 
 body {
   margin: 1vh 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -187,7 +188,7 @@ figure img:hover {
   animation-iteration-count: 1;
 }
 
-#event {
+.event {
   padding: 1vh 0;
   margin: 1vh 0;
   float: left;
@@ -197,18 +198,19 @@ figure img:hover {
 
 .advertise {
   display: flex;
-  background-image: url(/images/reklam.jpg);
+  background-image: url(../images/reklam.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 80%;
   height: auto;
 }
 
-.advertise p {
+/*fixa id, bara en!! */
+.event h1 {
   display: flex;
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
-  margin: 10vh 10vw;
+  margin: 10vh 7vw;
   color: black;
   font-size: 60px;
   font-family: "Grape Nuts", sans-serif;
