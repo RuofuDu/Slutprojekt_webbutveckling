@@ -2,24 +2,25 @@ let bookedhour = 0;
 let cancelledhour = 0;
 let amount = 0;
  
-function replaceClass (e, before, after) { //?
+function replaceClass (e, before, after) { 
     e.target.classList.remove(before);
     e.target.classList.add(after);    
 }
- 
+
 function updateAmount (){
     document.getElementById('bookedhour').innerText = bookedhour;
     document.getElementById('cancelledhour').innerText = cancelledhour;
     amount = (bookedhour - cancelledhour) * 120;
     document.getElementById('amount').innerText = amount;
     if (bookedhour == 0 && cancelledhour == 0) {
-        document.getElementById("confirm").disabled = true; //?
+        document.getElementById("confirm").disabled = true; 
     } else {
         document.getElementById("confirm").disabled = false;
     }
 }
  
 updateAmount();
+//all the td tag that user can operate, querySelectorAll returns all the nodes (elements) specified by the class
 let operable = document.querySelectorAll('.bookable,.ownbooked,.selected,.cancelled');
  
 for (let i = 0; i < operable.length; i++) {
@@ -29,7 +30,6 @@ for (let i = 0; i < operable.length; i++) {
         } else if (e.target.classList.contains('selected')) {
             e.target.innerHTML = "bokad";
         } else if (e.target.classList.contains('ownbooked')) {
-            console.log("ownbooked");
             e.target.innerHTML = "bokad";
         } else if (e.target.classList.contains('cancelled')) {
             e.target.innerHTML = "avbokad";
@@ -55,7 +55,7 @@ for (let i = 0; i < operable.length; i++) {
     operable[i].addEventListener("click", function (e) {
         if (e.target.classList.contains('bookable')) {
             bookedhour += 1;
-            replaceClass (e, 'bookable', 'selected')
+            replaceClass (e, 'bookable', 'selected')// If bookable is clicked, change class to selected        
         } else if (e.target.classList.contains('selected')) {
             bookedhour -= 1;
             replaceClass (e, 'selected', 'bookable')
@@ -92,3 +92,9 @@ function confirm() {
     amount = 0;
     updateAmount();                
 }
+
+// change table color
+// change button bekräfta place and fix media quiry
+// media query, background image!!
+//css ta bort oanvändbar kode, kommentera gärna!
+
