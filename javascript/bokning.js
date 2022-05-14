@@ -2,7 +2,7 @@ let bookedhour = 0;
 let cancelledhour = 0;
 let amount = 0;
  
-function replaceClass (e, before, after) {
+function replaceClass (e, before, after) { //?
     e.target.classList.remove(before);
     e.target.classList.add(after);    
 }
@@ -13,7 +13,7 @@ function updateAmount (){
     amount = (bookedhour - cancelledhour) * 120;
     document.getElementById('amount').innerText = amount;
     if (bookedhour == 0 && cancelledhour == 0) {
-        document.getElementById("confirm").disabled = true;
+        document.getElementById("confirm").disabled = true; //?
     } else {
         document.getElementById("confirm").disabled = false;
     }
