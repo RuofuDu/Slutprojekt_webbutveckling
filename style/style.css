@@ -230,16 +230,17 @@ h2 {
 }
 
 .background {
+  position: relative;
   display: flex;
-  position: absolute;
-  top: 0;
   width: 100%;
-  max-height: 60%;
+  height: auto;
 }
 
 .back {
-  position: relative;
+  display: flex;
+  position: absolute;
   padding: 0px 0px;
+  top: 1%;
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: red;
@@ -251,32 +252,29 @@ h2 {
   background-color: black;
 }
 
+
 .logininfo {
-  position: relative;
-  padding-top: 30%;
-  padding-left: 15%;
-  width: 60%;
+  margin: 15vh 2vw 0 8vw;
+  width: 40%;
 }
-
+ 
 .logininfo h4 {
+  margin: 5vh 0;
   font-size: 30px;
-  padding-bottom: 6%;
 }
-
+ 
 .logininfo p {
-  width: 80%;
-  padding: 1%;
-  padding-top: 3%;
+  padding: 1vh 0;
 }
-
+ 
 .loginbox {
-  position: absolute;
-  width: 320px;
-  height: 420px;
+  position: relative;
+  width: 30%;
+  height: auto;
+  margin-top: -22vh;
+  margin-left: 75vw;
   background: black;
   color: white;
-  top: 93%;
-  left: 73%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   padding: 70px 30px;
@@ -330,6 +328,7 @@ input[type="password"] {
 }
 
 .loginbox a {
+  display: block;
   text-decoration: none;
   font-size: 15px;
   line-height: 20px;
@@ -348,9 +347,9 @@ html （这里该如何起名？）{
 }*/
 
 .chooseday li {
-  margin-top: 29%;
+  margin-top: 5%;
   font-size: 25px;
-  margin-left: 10%;
+  margin-left: 8%;
 }
 
 .container {
@@ -368,7 +367,7 @@ html （这里该如何起名？）{
 }
 
 .month {
-  width: 100%;
+  width: 43rem;
   height: 12rem;
   background-color: red;
   display: flex;
@@ -448,8 +447,7 @@ html （这里该如何起名？）{
 }
 
 .bokainfo ul {
-  margin-top: 29%;
-  margin-left: 10%;
+  margin: 10vh 10vw 0 10vw; 
 }
 
 .bokainfo li {
@@ -463,8 +461,9 @@ html （这里该如何起名？）{
   position: relative;
   display: flex;
   padding: 10px 15px;
-  left: 53%;
-  bottom: 96px;
+  margin-bottom: 2vh;
+  left: 1%;
+  top: 10px;
   color: red;
   cursor: pointer;
   font-size: large;
@@ -477,10 +476,9 @@ html （这里该如何起名？）{
 }
 
 table {
+  display: flex;
   position: absolute;
-  display: inline-block;
-  margin-top: 3%;
-  margin-left: 10%;
+  margin: 5vh 5vw 0 9vw;
   border-collapse: collapse;
   cursor: pointer;
 }
@@ -559,7 +557,7 @@ tr:nth-child(even) {
   .club {
     font-size: 90px;
     align-items: center;
-    margin: 5vh 9vw;
+    margin: 5vh 3vw;
   }
   figure {
     padding: 1vh 1vw;
@@ -580,7 +578,7 @@ tr:nth-child(even) {
     margin: 0 0 15vh 40vw;
   }
   .icons {
-    margin: 0 0 0 19vw;
+    margin-left: 19vw;
   }
   .informations {
     margin: 0 7vw 0 19vw;
@@ -588,6 +586,17 @@ tr:nth-child(even) {
   .informations {
     padding: 0 1vw;
   }
+  .logininfo {
+    width: 80%;
+  }
+  .loginbox {
+    margin: 45vh 0 0 50vw;
+    width: 50%;
+  }
+  table {
+    display: inline-block;
+    width: 50%;
+  }   
 }
 
 /*telephone !!!!!!!!!!!!!
