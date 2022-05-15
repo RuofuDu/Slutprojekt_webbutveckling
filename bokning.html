@@ -30,87 +30,91 @@
           <button id="confirm" onclick="confirm()">bekräfta</button>
         </ul>
       </sektion>
-      <table id="bookingTable">
-        <tr>
-          <th class="header"></th>
-          <th>kl 8-9</th>
-          <th>kl 9-10</th>
-          <th>kl 10-11</th>
-          <th>kl 11-12</th>
-          <th>kl 12-13</th>
-          <th>kl 13-14</th>
-          <th>kl 14-15</th>
-          <th>kl 15-16</th>
-          <th>kl 16-17</th>
-          <th>kl 17-18</th>
-          <th>kl 18-19</th>
-          <th>kl 19-20</th>
-          <th>kl 20-21</th>
-        </tr>
-        <tr>
-          <td class="header">bana 1</td>
-          <td class="otherbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="otherbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="otherbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-        </tr>
-        <tr>
-          <td class="header">bana 2</td>
-          <td class="bookable"></td>
-          <td class="otherbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="otherbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-        </tr>
-        <tr>
-          <td class="header">bana 3</td>
-          <td class="otherbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="otherbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="ownbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="otherbooked">bokad</td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">tävling</td>
-          <td class="adminbooked">träning</td>
-          <td class="adminbooked">träning</td>
-          <td class="adminbooked">träning</td>
-        </tr>
-        <tr>
-          <td class="header">bana 4</td>
-          <td class="otherbooked">bokad</td>
-          <td class="otherbooked">bokad</td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-          <td class="bookable"></td>
-        </tr>
+      <table class="bookingTable">
+        <thead>
+          <tr>
+            <th class="header">Bana</th>
+            <th>kl 8-9</th>
+            <th>kl 9-10</th>
+            <th>kl 10-11</th>
+            <th>kl 11-12</th>
+            <th>kl 12-13</th>
+            <th>kl 13-14</th>
+            <th>kl 14-15</th>
+            <th>kl 15-16</th>
+            <th>kl 16-17</th>
+            <th>kl 17-18</th>
+            <th>kl 18-19</th>
+            <th>kl 19-20</th>
+            <th>kl 20-21</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="header" data-label="Bana">bana 1</td>
+            <td class="otherbooked" data-label="kl 8-9">bokad</td>
+            <td class="bookable" data-label="kl 9-10">obokad</td>
+            <td class="bookable" data-label="kl 10-11">obokad</td>
+            <td class="otherbooked" data-label="kl 11-12">bokad</td>
+            <td class="bookable" data-label="kl 12-13">obokad</td>
+            <td class="bookable" data-label="kl 13-14">obokad</td>
+            <td class="otherbooked" data-label="kl 14-15">bokad</td>
+            <td class="bookable" data-label="kl 15-16">obokad</td>
+            <td class="adminbooked" data-label="kl 16-17">tävling</td>
+            <td class="adminbooked" data-label="kl 17-18">tävling</td>
+            <td class="adminbooked" data-label="kl 18-19">tävling</td>
+            <td class="adminbooked" data-label="kl 19-20">tävling</td>
+            <td class="adminbooked" data-label="kl 20-21">tävling</td>
+          </tr>
+          <tr>
+            <td class="header" data-label="Bana">bana 2</td>
+            <td class="bookable" data-label="kl 8-9">obokad</td>
+            <td class="otherbooked" data-label="kl 9-10">bokad</td>
+            <td class="bookable" data-label="kl 10-11">obokad</td>
+            <td class="bookable" data-label="kl 11-12">obokad</td>
+            <td class="otherbooked" data-label="kl 12-13">bokad</td>
+            <td class="bookable" data-label="kl 13-14">obokad</td>
+            <td class="bookable" data-label="kl 14-15">obokad</td>
+            <td class="bookable" data-label="kl 15-16">obokad</td>
+            <td class="adminbooked" data-label="kl 16-17">tävling</td>
+            <td class="adminbooked" data-label="kl 17-18">tävling</td>
+            <td class="adminbooked" data-label="kl 18-19">tävling</td>
+            <td class="adminbooked" data-label="kl 19-20">tävling</td>
+            <td class="adminbooked" data-label="kl 20-21">tävling</td>
+          </tr>
+          <tr>
+            <td class="header" data-label="Bana">bana 3</td>
+            <td class="otherbooked" data-label="kl 8-9">bokad</td>
+            <td class="bookable" data-label="kl 9-10">obokad</td>
+            <td class="otherbooked" data-label="kl 10-11">bokad</td>
+            <td class="bookable" data-label="kl 11-12">obokad</td>
+            <td class="bookable" data-label="kl 12-13">obokad</td>
+            <td class="ownbooked" data-label="kl 13-14">bokad</td>
+            <td class="bookable" data-label="kl 14-15">obokad</td>
+            <td class="otherbooked" data-label="kl 15-16">bokad</td>
+            <td class="adminbooked" data-label="kl 16-17">tävling</td>
+            <td class="adminbooked" data-label="kl 17-18">tävling</td>
+            <td class="adminbooked" data-label="kl 18-19">träning</td>
+            <td class="adminbooked" data-label="kl 19-20">träning</td>
+            <td class="adminbooked" data-label="kl 20-21">träning</td>
+          </tr>
+          <tr>
+            <td class="header" data-label="Bana">bana 4</td>
+            <td class="otherbooked" data-label="kl 8-9">bokad</td>
+            <td class="otherbooked" data-label="kl 9-10">bokad</td>
+            <td class="bookable" data-label="kl 10-11">obokad</td>
+            <td class="bookable" data-label="kl 11-12">obokad</td>
+            <td class="bookable" data-label="kl 12-13">obokad</td>
+            <td class="bookable" data-label="kl 13-14">obokad</td>
+            <td class="bookable" data-label="kl 14-15">obokad</td>
+            <td class="bookable" data-label="kl 15-16">obokad</td>
+            <td class="bookable" data-label="kl 16-17">obokad</td>
+            <td class="bookable" data-label="kl 17-18">obokad</td>
+            <td class="bookable" data-label="kl 18-19">obokad</td>
+            <td class="bookable" data-label="kl 19-20">obokad</td>
+            <td class="bookable" data-label="kl 20-21">obokad</td>
+          </tr>
+        </tbody>
       </table>
     </main>
 

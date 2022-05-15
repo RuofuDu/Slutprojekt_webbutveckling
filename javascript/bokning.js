@@ -6,7 +6,7 @@ function replaceClass (e, before, after) {
     e.target.classList.remove(before);
     e.target.classList.add(after);    
 }
-
+ 
 function updateAmount (){
     document.getElementById('bookedhour').innerText = bookedhour;
     document.getElementById('cancelledhour').innerText = cancelledhour;
@@ -26,9 +26,9 @@ let operable = document.querySelectorAll('.bookable,.ownbooked,.selected,.cancel
 for (let i = 0; i < operable.length; i++) {
     operable[i].addEventListener("mouseleave", function (e) {
         if (e.target.classList.contains('bookable')) {
-            e.target.innerHTML = "";
+            e.target.innerHTML = "obokad";
         } else if (e.target.classList.contains('selected')) {
-            e.target.innerHTML = "bokad";
+            e.target.innerHTML = "vald";
         } else if (e.target.classList.contains('ownbooked')) {
             e.target.innerHTML = "bokad";
         } else if (e.target.classList.contains('cancelled')) {
@@ -92,9 +92,8 @@ function confirm() {
     amount = 0;
     updateAmount();                
 }
-
-// 网球背景图奇怪的白边
+ //调整格式
 // change button bekräfta place and fix media quiry
 // media query, background image!!
 //css ta bort oanvändbar kode, kommentera gärna!
-
+ 

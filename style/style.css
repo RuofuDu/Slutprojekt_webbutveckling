@@ -252,21 +252,20 @@ h2 {
   background-color: black;
 }
 
-
 .logininfo {
   margin: 15vh 2vw 0 8vw;
   width: 40%;
 }
- 
+
 .logininfo h4 {
   margin: 5vh 0;
   font-size: 30px;
 }
- 
+
 .logininfo p {
   padding: 1vh 0;
 }
- 
+
 .loginbox {
   position: relative;
   width: 30%;
@@ -448,7 +447,7 @@ html （这里该如何起名？）{
 
 .bokainfo ul {
   width: 60%;
-  margin: 10vh 10vw 0 10vw; 
+  margin: 10vh 10vw 0 10vw;
 }
 
 .bokainfo li {
@@ -469,37 +468,52 @@ html （这里该如何起名？）{
   font-size: large;
 }
 
-#bookingTable {
+.bookingTable {
   border-width: 2px;
   border-style: solid;
   border-color: blue;
-}
-
-table {
-  display: flex;
-  position: absolute;
-  margin: 5vh 5vw 0 9vw;
+  margin: 5vh 2vw;
   border-collapse: collapse;
   cursor: pointer;
+  width: 96%;
+  align-content: center;
 }
 
 th,
 td {
   border: 1px solid black;
   text-align: center;
-  padding: 10px 10px;
 }
 
-td a {
-  color: black;
-}
+@media (max-width: 800px) {
+  .bookingTable thead {
+    display: none;
+  }
 
-td a:hover {
-  color: red;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
+  .bookingTable,
+  .bookingTable tbody,
+  .bookingTable tr,
+  .bookingTable td {
+    display: block;
+  }
+  .bookingTable tr {
+    margin-bottom: 15px;
+  }
+  .bookingTable td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .bookingTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    //    width: 50%;
+    //    padding-left:15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
 }
 
 .header {
@@ -522,7 +536,7 @@ tr:nth-child(even) {
 }
 
 .ownbooked {
-  background-color: blue;
+  background-color: rgb(109, 109, 240);
 }
 
 .selected {
@@ -597,5 +611,3 @@ tr:nth-child(even) {
     margin: 0 10vw;
   }
 }
-
-/*telephone !!!!!!!!!!!!!
