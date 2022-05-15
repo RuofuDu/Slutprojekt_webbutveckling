@@ -447,6 +447,7 @@ html （这里该如何起名？）{
 }
 
 .bokainfo ul {
+  width: 60%;
   margin: 10vh 10vw 0 10vw; 
 }
 
@@ -461,9 +462,8 @@ html （这里该如何起名？）{
   position: relative;
   display: flex;
   padding: 10px 15px;
-  margin-bottom: 2vh;
-  left: 1%;
-  top: 10px;
+  left: 115%;
+  bottom: 41px;
   color: red;
   cursor: pointer;
   font-size: large;
@@ -506,7 +506,7 @@ tr:nth-child(even) {
   background-color: white;
 }
 .adminbooked {
-  background-color: lightgray;
+  background-color: yellowgreen;
 }
 
 .bookable {
@@ -514,7 +514,7 @@ tr:nth-child(even) {
 }
 
 .cancelled {
-  background-color: gainsboro;
+  background-color: yellow;
 }
 
 .otherbooked {
@@ -593,10 +593,9 @@ tr:nth-child(even) {
     margin: 45vh 0 0 50vw;
     width: 50%;
   }
-  table {
-    display: inline-block;
-    width: 50%;
-  }   
+  .bokainfo button {
+    margin: 0 10vw;
+  }
 }
 
 /*telephone !!!!!!!!!!!!!

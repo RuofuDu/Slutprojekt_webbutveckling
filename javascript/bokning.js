@@ -93,7 +93,7 @@ function confirm() {
     updateAmount();                
 }
 
-// change table color
+// 网球背景图奇怪的白边
 // change button bekräfta place and fix media quiry
 // media query, background image!!
 //css ta bort oanvändbar kode, kommentera gärna!
