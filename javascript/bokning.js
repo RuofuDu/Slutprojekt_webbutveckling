@@ -88,7 +88,7 @@ function confirm() {
     amount = 0;
     updateAmount();                
 }
- //调整格式
+ //调整格式, fontproblem
 // change button bekräfta place and fix media quiry
 // media query, background image!!
 //css ta bort oanvändbar kode, kommentera gärna!
