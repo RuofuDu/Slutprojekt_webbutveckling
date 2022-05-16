@@ -2,11 +2,6 @@ let bookedhour = 0;
 let cancelledhour = 0;
 let amount = 0;
  
-function replaceClass (e, before, after) { 
-    e.target.classList.remove(before);
-    e.target.classList.add(after);    
-}
- 
 function updateAmount (){
     document.getElementById('bookedhour').innerText = bookedhour;
     document.getElementById('cancelledhour').innerText = cancelledhour;
@@ -55,16 +50,16 @@ for (let i = 0; i < operable.length; i++) {
     operable[i].addEventListener("click", function (e) {
         if (e.target.classList.contains('bookable')) {
             bookedhour += 1;
-            replaceClass (e, 'bookable', 'selected')// If bookable is clicked, change class to selected        
+            updateClass (e.target, 'bookable', 'selected')// If bookable is clicked, change class to selected        
         } else if (e.target.classList.contains('selected')) {
             bookedhour -= 1;
-            replaceClass (e, 'selected', 'bookable')
+            updateClass (e.target, 'selected', 'bookable')
         } else if (e.target.classList.contains('ownbooked')) {
             cancelledhour += 1;
-            replaceClass (e, 'ownbooked', 'cancelled')
+            updateClass (e.target, 'ownbooked', 'cancelled')
         } else if (e.target.classList.contains('cancelled')) {
             cancelledhour -= 1;
-            replaceClass (e, 'cancelled', 'ownbooked')
+            updateClass (e.target, 'cancelled', 'ownbooked')
         }
         updateAmount();                
     })
@@ -80,10 +75,11 @@ function confirm() {
     for (let i = 0; i < operable.length; i++) {
         if (operable[i].classList.contains('selected')) {
             updateClass(operable[i], 'selected', 'ownbooked');
+            operable[i].innerHTML = "bokad";
         }
         if (operable[i].classList.contains('cancelled')) {
             updateClass(operable[i], 'cancelled', 'bookable');
-            operable[i].innerHTML = "";
+            operable[i].innerHTML = "obokad";
         }        
     }
     alert("Du har klarat bokning/avbokning");
@@ -96,4 +92,6 @@ function confirm() {
 // change button bekräfta place and fix media quiry
 // media query, background image!!
 //css ta bort oanvändbar kode, kommentera gärna!
+ 
+ 
  

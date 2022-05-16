@@ -162,12 +162,10 @@ figure img:hover {
 }
 
 .advertise {
-  display: flex;
-  background-image: url(/images/reklam.jpg);
+  background-image: url("/images/reklam.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 80%;
-  height: auto;
+  max-width: 50vw;
+  height: fit-content;
 }
 
 /*fixa id, bara en!! */
