@@ -162,7 +162,7 @@ figure img:hover {
 }
 
 .advertise {
-  background-image: url("/images/reklam.jpg");
+  background-image: url(/images/reklam.jpg);
   background-repeat: no-repeat;
   max-width: 50vw;
   height: fit-content;
@@ -218,13 +218,13 @@ h2 {
   max-width: 100%;
   height: auto;
   flex-direction: row-reverse;
-  margin: 0 1vw;
+  margin: 0 1vw 0 1vw;
 }
 
 .informations p {
   width: 100%;
   height: auto;
-  padding: 1vh 1vw;
+  padding: 1vh 2vw;
 }
 
 .background {
@@ -483,37 +483,6 @@ td {
   text-align: center;
 }
 
-@media (max-width: 800px) {
-  .bookingTable thead {
-    display: none;
-  }
-
-  .bookingTable,
-  .bookingTable tbody,
-  .bookingTable tr,
-  .bookingTable td {
-    display: block;
-  }
-  .bookingTable tr {
-    margin-bottom: 15px;
-  }
-  .bookingTable td {
-    text-align: right;
-    padding-left: 50%;
-    position: relative;
-  }
-  .bookingTable td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 0;
-    //    width: 50%;
-    //    padding-left:15px;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: left;
-  }
-}
-
 .header {
   background-color: white;
 }
@@ -593,7 +562,8 @@ td {
     margin-left: 19vw;
   }
   .informations {
-    margin: 0 7vw 0 19vw;
+    margin-left: auto;
+    width: 80%;
   }
   .informations {
     padding: 0 1vw;
@@ -605,7 +575,35 @@ td {
     margin: 45vh 0 0 50vw;
     width: 50%;
   }
-  .bokainfo button {
-    margin: 0 10vw;
+}
+
+@media (max-width: 800px) {
+  .bookingTable thead {
+    display: none;
+  }
+
+  .bookingTable,
+  .bookingTable tbody,
+  .bookingTable tr,
+  .bookingTable td {
+    display: block;
+  }
+  .bookingTable tr {
+    margin-bottom: 15px;
+  }
+  .bookingTable td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .bookingTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    //    width: 50%;
+    //    padding-left:15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
   }
 }
