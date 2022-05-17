@@ -155,26 +155,44 @@ figure img:hover {
 
 .event {
   padding: 1vh 0;
-  margin: 1vh 0;
+  margin: 2vh 0;
   float: left;
   width: 50%;
   align-content: center;
 }
 
-.advertise {
-  background-image: url(/images/reklam.jpg);
-  background-repeat: no-repeat;
-  max-width: 50vw;
-  height: fit-content;
+.advertise h1 {
+  display: flex;
+  height: auto;
+  color: white;
+  margin: 15vh 0 30vh 10vw;
+  width: 30%;
+  font-size: clamp(2rem, 8vw, 6rem);
+  font-family: "Grape Nuts", sans-serif;
 }
 
-.event h1 {
+.advertise {
   display: flex;
-  max-width: 80%;
+  background-image: url("../images/bokabackground3.jpg");
+  background-repeat: no-repeat;
+  height: fit-content;
+  width: 200%;
+  margin: 0 1vw;
+}
+
+.informations {
+  display: flex;
+  max-width: 100%;
   height: auto;
-  margin: 10vh 7vw;
-  font-size: 60px;
-  font-family: "Grape Nuts", sans-serif;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.informations p {
+  width: 100%;
+  color: white;
+  height: auto;
+  padding: 1vh 1vw;
 }
 
 iframe {
@@ -191,6 +209,7 @@ h2 {
   display: flex;
   max-width: 100%;
   height: auto;
+  color: #f2f2f2;
   font-size: 30px;
   margin: 0 0 10vh 18vw;
 }
@@ -205,25 +224,11 @@ h2 {
 .icons a {
   font-size: 30px;
   padding: 10px 9px;
-  color: black;
+  color: white;
 }
 
 .icons a:hover {
   color: red;
-}
-
-.informations {
-  display: flex;
-  max-width: 100%;
-  height: auto;
-  flex-direction: row-reverse;
-  margin: 0 1vw 0 1vw;
-}
-
-.informations p {
-  width: 100%;
-  height: auto;
-  padding: 1vh 2vw;
 }
 
 .background {
@@ -545,24 +550,33 @@ td {
   .event {
     width: 100%;
   }
-  .event h1 {
+  .advertise h1 {
     margin: 5vh 20vw;
+    color: black;
+  }
+  .advertise {
+    background-image: none;
   }
   iframe {
     margin: 0 25vw;
   }
   h2 {
     margin: 0 0 15vh 40vw;
+    color: black;
   }
   .icons {
     margin-left: 19vw;
   }
+  .icons a {
+    color: black;
+  }
   .informations {
     margin-left: auto;
     width: 80%;
-  }
-  .informations {
     padding: 0 1vw;
+  }
+  .informations p {
+    color: black;
   }
   .logininfo {
     width: 80%;

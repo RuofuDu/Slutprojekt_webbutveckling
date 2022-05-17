@@ -90,7 +90,6 @@ function confirm() {
 }
 
 
-// media query, background image!!
  
  
  
