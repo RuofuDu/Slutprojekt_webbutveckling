@@ -168,7 +168,6 @@ figure img:hover {
   height: fit-content;
 }
 
-/*fixa id, bara en!! */
 .event h1 {
   display: flex;
   max-width: 80%;
@@ -336,13 +335,6 @@ input[type="password"] {
   color: yellow;
 }
 
-/*如何仅仅fixa calender.html页面的字体，而不是所有页面的字体都被控制？
-已用HTML内置style解决，但并非最佳方案*/
-/*
-html （这里该如何起名？）{        
-  font-size: 62.5%;
-}*/
-
 .chooseday li {
   margin-top: 5%;
   font-size: 25px;
@@ -376,7 +368,7 @@ html （这里该如何起名？）{
 
 .month i {
   font-size: 2.5rem;
-  cursor: pointer; /*这个的作用是当鼠标hover这个地方的时候，光标由箭头变成了手指，表示可以点选*/
+  cursor: pointer;
 }
 
 .month h1 {
@@ -410,7 +402,7 @@ html （这里该如何起名？）{
 .days {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; /*The flex-wrap property specifies whether the flexible items should wrap or not. 是否被包起来*/
+  flex-wrap: wrap; /*The flex-wrap property specifies whether the flexible items should wrap or not.*/
   padding: 0.2rem;
 }
 
@@ -436,7 +428,7 @@ html （这里该如何起名？）{
 
 .prev-date,
 .next-date {
-  opacity: 0.5; /*det betdyer datum i nästa månad, klarhet 清晰度*/
+  opacity: 0.5;
 }
 
 .today {

@@ -86,9 +86,10 @@ function confirm() {
     bookedhour = 0;
     cancelledhour = 0;
     amount = 0;
-    updateAmount();                
+    updateAmount();        
 }
- //调整格式
+
+
 // change button bekräfta place and fix media quiry
 // media query, background image!!
 //css ta bort oanvändbar kode, kommentera gärna!
