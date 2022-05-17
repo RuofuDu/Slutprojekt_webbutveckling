@@ -464,7 +464,6 @@ input[type="password"] {
   border-color: blue;
   margin: 5vh 2vw;
   border-collapse: collapse;
-  cursor: pointer;
   width: 96%;
   align-content: center;
 }
@@ -485,10 +484,12 @@ td {
 
 .bookable {
   background-color: rgb(202, 206, 248);
+  cursor: pointer;
 }
 
 .cancelled {
   background-color: yellow;
+  cursor: pointer;
 }
 
 .otherbooked {
@@ -497,10 +498,12 @@ td {
 
 .ownbooked {
   background-color: rgb(109, 109, 240);
+  cursor: pointer;
 }
 
 .selected {
   background-color: gainsboro;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
