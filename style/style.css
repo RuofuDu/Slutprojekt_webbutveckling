@@ -28,11 +28,11 @@ header {
   margin: 1vh 1vw;
 }
 
-.logo {
+.logo_nav img {
   margin: 1vh 1vw;
 }
 
-.club {
+.nav_club h1 {
   margin: 10vh 5vw;
   text-align: center;
   color: black;
@@ -525,10 +525,10 @@ td {
     text-align: left;
   }
 
-  .logo {
+  .logo_nav img {
     display: none;
   }
-  .club {
+  .nav_club h1 {
     font-size: 90px;
     align-items: center;
     margin: 5vh 3vw;

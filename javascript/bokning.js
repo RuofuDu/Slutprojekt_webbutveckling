@@ -90,9 +90,7 @@ function confirm() {
 }
 
 
-// change button bekräfta place and fix media quiry
 // media query, background image!!
-//css ta bort oanvändbar kode, kommentera gärna!
  
  
  
