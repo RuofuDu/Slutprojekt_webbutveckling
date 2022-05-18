@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("mymenu");
+    if (x.className === "menu") {
+      x.className += " responsive";
+    } else {
+      x.className = "menu";
+    }
+  }  
+
 let bookedhour = 0;
 let cancelledhour = 0;
 let amount = 0;

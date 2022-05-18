@@ -1,4 +1,13 @@
-const date = new Date(); //funktion som alltid uppdatera tiden 
+function myFunction() {
+  var x = document.getElementById("mymenu");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+
+const date = new Date(); //funktion som alltid uppdatera tiden
 console.log(date);
 const renderCalendar = () => {
   date.setDate(1);// sätta datum från 1

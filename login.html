@@ -10,16 +10,31 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style/style.css" />
+    <script
+    src=https://kit.fontawesome.com/92d1c8737b.js
+    crossorigin="anonymous"
+  ></script>
     <title>Inloggning</title>
   </head>
   <body>
     <header>
+      <nav class="menu" id="mymenu">
+        <a class="active" href="#home">Home</a>
+        <a href="index.html">Nyhet</a>
+        <a href="index.html">Tävlingar</a>
+        <a href="login.html">Logga in</a>
+        <a href="login.html">Boka bana</a>
+        <a href="index.html">kontakt oss</a>
+        <a href="index.html">om oss</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
       <img
         class="background"
         src="images/bokabackground3.jpg"
         alt="backgroundsbild"
       />
-      <a class="back" href="index.html">baka till hemsida</a>
     </header>
     <main>
       <div class="logininfo">
@@ -51,7 +66,7 @@
             placeholder="Ange ditt lösenord"
           />
           <input id="submit" type="submit" value="logga in" />
-          <span id="errorMessage"></span> hongse
+          <span id="errorMessage"></span>
           <a href="#">Om du har glömt ditt lösenord</a><br />
           <a href="#">Om du har inte konto?</a>
         </form>

@@ -40,12 +40,12 @@ header {
   font-family: "Grape Nuts", sans-serif;
 }
 
-nav {
+.menu {
   overflow: hidden;
   background-color: black;
 }
 
-nav a {
+.menu a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -55,17 +55,17 @@ nav a {
   font-size: 17px;
 }
 
-nav a:hover {
+.menu a:hover {
   background-color: gainsboro;
   color: black;
 }
 
-nav a.active {
+.menu a.active {
   background-color: red;
   color: white;
 }
 
-nav .icon {
+.menu .icon {
   display: none;
 }
 
@@ -236,22 +236,6 @@ h2 {
   display: flex;
   width: 100%;
   height: auto;
-}
-
-.back {
-  display: flex;
-  position: absolute;
-  padding: 0px 0px;
-  top: 1%;
-  font-size: 30px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: red;
-  color: black;
-}
-
-.back:hover {
-  color: red;
-  background-color: black;
 }
 
 .logininfo {
@@ -512,22 +496,22 @@ td {
 }
 
 @media screen and (max-width: 800px) {
-  nav a:not(:first-child) {
+  .menu a:not(:first-child) {
     display: none;
   }
-  nav a.icon {
+  .menu a.icon {
     float: right;
     display: block;
   }
-  nav.responsive {
+  .menu.responsive {
     position: relative;
   }
-  nav.responsive .icon {
+  .menu.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  nav.responsive a {
+  .menu.responsive a {
     float: none;
     display: block;
     text-align: left;

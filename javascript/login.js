@@ -9,6 +9,7 @@ submit.addEventListener("click", function (event) {
         console.log(password.value)
         event.preventDefault(); //meaning that the default action that belongs to the event will not occur.
         errorMessage.innerHTML = "Du måste ange ditt mejl och lösenord";
+        document.getElementById("errorMessage").style.color = "red";
     }
     else {
         let regexp = RegExp(mailformat)
@@ -16,6 +17,7 @@ submit.addEventListener("click", function (event) {
         if (regexp.test(email.value) == false) {
             event.preventDefault();
             errorMessage.innerHTML = "Du måste ange ett lämpligt mail adress";
+            document.getElementById("errorMessage").style.color = "red";
         }
         else {
             localStorage.setItem("email", JSON.stringify(email.value))
