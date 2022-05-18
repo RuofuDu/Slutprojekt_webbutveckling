@@ -40,12 +40,12 @@ header {
   font-family: "Grape Nuts", sans-serif;
 }
 
-.menu {
+nav {
   overflow: hidden;
   background-color: black;
 }
 
-.menu a {
+nav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -55,17 +55,17 @@ header {
   font-size: 17px;
 }
 
-.menu a:hover {
+nav a:hover {
   background-color: gainsboro;
   color: black;
 }
 
-.menu a.active {
+nav a.active {
   background-color: red;
   color: white;
 }
 
-.menu .icon {
+nav .icon {
   display: none;
 }
 
@@ -111,7 +111,7 @@ figure img {
 }
 
 figcaption {
-  margin-left: 30%;
+  text-align: center;
   font-size: 30px;
 }
 
@@ -512,22 +512,22 @@ td {
 }
 
 @media screen and (max-width: 800px) {
-  .menu a:not(:first-child) {
+  nav a:not(:first-child) {
     display: none;
   }
-  .menu a.icon {
+  nav a.icon {
     float: right;
     display: block;
   }
-  .menu.responsive {
+  nav.responsive {
     position: relative;
   }
-  .menu.responsive .icon {
+  nav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .menu.responsive a {
+  nav.responsive a {
     float: none;
     display: block;
     text-align: left;
