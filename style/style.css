@@ -598,8 +598,8 @@ td {
 
 @media (max-width: 800px) {
   .bokainfo button {
-    left: 100%;
-    bottom: 41px;
+    left: 60%;
+    bottom: 21px;
     color: red;
     cursor: pointer;
     font-size: large;
